@@ -1,0 +1,129 @@
+/* App.css */
+
+/* General page styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* keeps it at the top but centered horizontally */
+}
+
+/* Container */
+.p-6 {
+  padding: 2rem;
+}
+
+.max-w-lg {
+  width: 100%;
+  max-width: 600px;
+  background: #6a3ad9ff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.text-2xl {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Notes List Layout */
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Note Card */
+.note-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+form input,
+form textarea {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s ease-in-out, transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.add {
+  background: #3b82f6;
+  color: white;
+}
+
+button.add:hover {
+  background: #2563eb;
+}
+
+button.delete {
+  background: #ef4444;
+  color: white;
+}
+
+button.delete:hover {
+  background: #dc2626;
+}
+
+button.update {
+  background: #10b981;
+  color: white;
+}
+
+button.update:hover {
+  background: #059669;
+}
